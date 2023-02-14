@@ -1,4 +1,100 @@
 *{
-    margin: 0 !important;
+    /* margin: 0 !important; */
     padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .expert {
+    position: absolute;
+    right: 0;
+    color: #6f77f1;
+    border: 2px solid #6f77f1;
+    padding: 0.3rem;
+    rotate: -15deg;
+    font-size: 3rem;
+  }
+  
+  
+  
+  @media (min-width: 0px) {
+    .right {
+      height: 70vh;
+      background: url(/IMAGES/girl.png) no-repeat center center/70%,
+        url(/IMAGES/zigzag.png) no-repeat center center/80%,
+        url(/IMAGES/Rectangle\ 79.png) no-repeat center center/70%;
+    }
+  
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .top_section {
+      height: 80vh;
+    }
+  
+    .right {
+      height: 100%;
+      background: url(/IMAGES/girl.png) no-repeat left center/70%,
+        url(/IMAGES/zigzag.png) no-repeat left center/80%,
+        url(/IMAGES/Rectangle\ 79.png) no-repeat center top/45%;
+    }
+    h1 {
+      font-size: 4rem !important;
+    }
+  }
+
+.Business {
+    background-color: rgba(242, 242, 242,0.3);
+    background-image: url(/IMAGES/Vector\ 17.png), url(/IMAGES/Vector\ 18.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.like {
+    background-image: url(/IMAGES/Ellipse\ 26.png);
+    background-repeat: no-repeat;
+}
+
+.four {
+    background-image: url(/IMAGES/4.png);
+    background-repeat: no-repeat;
+    /* background-color: rgba(242, 242, 242,0.3); */
+}
+.search {
+    background-image: url(/IMAGES/Ellipse\ 23.png);
+    background-repeat: no-repeat;
+}
+.target {
+    background-image: url(/IMAGES/Ellipse\ 25.png);
+    background-repeat: no-repeat;
+}
+.content {
+    background-image: url(/IMAGES/Ellipse\ 24.png);
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-image: url(/IMAGES/Ellipse\ 28.png) ;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.shadow {
+    background: white;
+}
+
+.member2 {
+    background-image: url(/IMAGES/member2bg.png) ;
+    background-repeat: no-repeat;
+}
+
+.member4 {
+    background-image: url(/IMAGES/member4bg.png) ;
+    background-repeat: no-repeat;
 }
