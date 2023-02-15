@@ -1,6 +1,7 @@
 *{
     /* margin: 0 !important; */
     padding: 0;
+    font-family: "poppins";
 }
 
 h1 {
@@ -59,34 +60,62 @@ h1 {
 .like {
     background-image: url(/IMAGES/Ellipse\ 26.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
-.four {
-    background-image: url(/IMAGES/4.png);
-    background-repeat: no-repeat;
-    /* background-color: rgba(242, 242, 242,0.3); */
-}
 .search {
     background-image: url(/IMAGES/Ellipse\ 23.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 .target {
     background-image: url(/IMAGES/Ellipse\ 25.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 .content {
     background-image: url(/IMAGES/Ellipse\ 24.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .box {
     background-image: url(/IMAGES/Ellipse\ 28.png) ;
     background-repeat: no-repeat;
     background-position: right;
+    background-size: contain;
 }
 
-.shadow {
+.continous {
     background: white;
+    background-image: url(/IMAGES/4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.continous:hover , .target1:hover , .content1:hover , .research:hover {
+  border-bottom: 2px solid #6f77f1 ;
+}
+
+.target1 {
+  background: white;
+  background-image: url(/IMAGES/3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.research {
+  background: white;
+  background-image: url(/IMAGES/1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.content1 {
+  background: white;
+  background: url(/IMAGES/2.png) no-repeat ;
+  /* background-repeat: no-repeat; */
+  background-position: right;
 }
 
 .member2 {
@@ -98,3 +127,44 @@ h1 {
     background-image: url(/IMAGES/member4bg.png) ;
     background-repeat: no-repeat;
 }
+
+.talk:hover {
+ background-color: black !important;
+ color: white !important;
+
+}
+
+.vector {
+  background-image: url(/IMAGES/Outline/Status/Rectangle\ 923.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: contain;
+}
+
+.light {
+  background-image: url(/IMAGES/Iconly/Light/Outline/Status/Rectangle\ 923.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tag {
+  background-image: url(/IMAGES/Outline/Status/Outline/Status/Outline/Status/Rectangle\ 923.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hover1:hover  {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.plans:hover {
+  background-color: #6f77f1 !important;
+  color: white;
+  zoom: 105% !important;
+}
+
+.plans button:hover{
+  background-color: yellow;
+  color: black;
+}
+
