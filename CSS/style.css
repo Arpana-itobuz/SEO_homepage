@@ -1,170 +1,207 @@
-*{
-    /* margin: 0 !important; */
-    padding: 0;
-    font-family: "poppins";
+* {
+  padding: 0;
+  font-family: "poppins";
 }
+
+/* navBar setion start */
+
+.LetsTalkButton:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* navBar setion end */
+
+/* topSection start */
 
 h1 {
-    font-weight: bold;
-    position: relative;
-  }
-  
-  .expert {
-    position: absolute;
-    right: 0;
-    color: #6f77f1;
-    border: 2px solid #6f77f1;
-    padding: 0.3rem;
-    rotate: -15deg;
-    font-size: 3rem;
-  }
-  
-  
-  
-  @media (min-width: 0px) {
-    .right {
-      height: 70vh;
-      background: url(/IMAGES/girl.png) no-repeat center center/70%,
-        url(/IMAGES/zigzag.png) no-repeat center center/80%,
-        url(/IMAGES/Rectangle\ 79.png) no-repeat center center/70%;
-    }
-  
-    h1 {
-      font-size: 3rem !important;
-    }
-  }
-  
-  @media (min-width: 800px) {
-    .top_section {
-      height: 80vh;
-    }
-  
-    .right {
-      height: 100%;
-      background: url(/IMAGES/girl.png) no-repeat left center/70%,
-        url(/IMAGES/zigzag.png) no-repeat left center/80%,
-        url(/IMAGES/Rectangle\ 79.png) no-repeat center top/45%;
-    }
-    h1 {
-      font-size: 4rem !important;
-    }
-  }
-
-.Business {
-    background-color: rgba(242, 242, 242,0.3);
-    background-image: url(/IMAGES/Vector\ 17.png), url(/IMAGES/Vector\ 18.png);
-    background-repeat: no-repeat;
-    /* background-position: center; */
+  font-weight: bold;
+  position: relative;
 }
 
-.like {
-    background-image: url(/IMAGES/Ellipse\ 26.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.expert {
+  position: absolute;
+  right: 0;
+  color: #6f77f1;
+  border: 2px solid #6f77f1;
+  padding: 0.3rem;
+  rotate: -15deg;
+  font-size: 3rem;
 }
 
-.search {
-    background-image: url(/IMAGES/Ellipse\ 23.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.target {
-    background-image: url(/IMAGES/Ellipse\ 25.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.content {
-    background-image: url(/IMAGES/Ellipse\ 24.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.zig-zag {
+  top: 7rem;
+  min-width: fit-content;
 }
 
-.box {
-    background-image: url(/IMAGES/Ellipse\ 28.png) ;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+.womandiv {
+  min-width: fit-content;
+  /* right: 7rem; */
+ /* left: 5rem; */
 }
 
-.continous {
-    background: white;
-    background-image: url(/IMAGES/4.png);
-    background-repeat: no-repeat;
-    background-position: right;
+
+.blue-box {
+  min-width: fit-content;
+  top:1rem;
+  left: 7rem;
 }
 
-.continous:hover , .target1:hover , .content1:hover , .research:hover {
-  border-bottom: 2px solid #6f77f1 ;
+.creativeTeamPerson1 {
+  left: 2%;
 }
 
-.target1 {
+.creativeTeamPerson2 {
+  left: 17%;
+}
+
+.creativeTeamPerson3 {
+  left: 34%;
+}
+
+.creativeTeamPerson4 {
+  left: 51%;
+}
+
+.creativeTeamPlusIcon {
+  left: 68%;
+}
+
+.creativeTeam {
+  height: 15vh;
+}
+
+/* topSectionEnd */
+
+/* websiteOptimisation section start */
+
+.websiteOptimisationTesting {
+  background: white;
+  background-image: url(/IMAGES/4.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.websiteOptimisationTesting:hover,
+.websiteOptimisationTarget:hover,
+.websiteOptimisationContent:hover,
+.websiteOptimisationResearch:hover {
+  border-bottom: 2px solid #6f77f1;
+}
+
+.websiteOptimisationTarget {
   background: white;
   background-image: url(/IMAGES/3.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.research {
+.websiteOptimisationResearch {
   background: white;
   background-image: url(/IMAGES/1.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.content1 {
+.websiteOptimisationContent {
   background: white;
-  background: url(/IMAGES/2.png) no-repeat ;
-  /* background-repeat: no-repeat; */
+  background: url(/IMAGES/2.png) no-repeat;
   background-position: right;
-}
-
-.member2 {
-    background-image: url(/IMAGES/member2bg.png) ;
-    background-repeat: no-repeat;
-}
-
-.member4 {
-    background-image: url(/IMAGES/member4bg.png) ;
-    background-repeat: no-repeat;
-}
-
-.talk:hover {
- background-color: black !important;
- color: white !important;
-
-}
-
-.vector {
-  background-image: url(/IMAGES/Outline/Status/Rectangle\ 923.png);
   background-repeat: no-repeat;
-  /* background-position: center; */
+}
+
+.websiteOptimisationContinous {
+  background-image: url(/IMAGES/Ellipse\ 26.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.websiteOptimisationSearch {
+  background-image: url(/IMAGES/Ellipse\ 23.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.websiteOptimisationTargetAnalysis {
+  background-image: url(/IMAGES/Ellipse\ 25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.websiteOptimisationContentOptimisation {
+  background-image: url(/IMAGES/Ellipse\ 24.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blueBackGround {
+  background-image: url(/IMAGES/Ellipse\ 28.png);
+  background-repeat: no-repeat;
+  background-position: right;
   background-size: contain;
 }
 
-.light {
+/* websiteOptimisation section end */
+
+/* businessSolution section start */
+
+.businessSolution {
+  background-color: rgba(242, 242, 242, 0.3);
+  background-image: url(/IMAGES/Vector\ 17.png), url(/IMAGES/Vector\ 18.png);
+  background-repeat: no-repeat;
+}
+
+/* businessSolution section end */
+
+/* businessGrowth section start */
+
+.businessGrowthVectorIcon {
+  background-image: url(/IMAGES/Outline/Status/Rectangle\ 923.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.businessGrowthLightIcon {
   background-image: url(/IMAGES/Iconly/Light/Outline/Status/Rectangle\ 923.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.tag {
+.businessGrowthTagIcon {
   background-image: url(/IMAGES/Outline/Status/Outline/Status/Outline/Status/Rectangle\ 923.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.hover1:hover  {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+/* businessGrowth section end */
 
-.plans:hover {
+/*  websiteCost section start */
+
+.websiteCostPlans:hover {
   background-color: #6f77f1 !important;
   color: white;
-  zoom: 105% !important;
+  /* scale: 1.08; */
 }
 
-.plans button:hover{
+.websiteCostPlans button:hover {
   background-color: yellow;
   color: black;
 }
 
+/*  websiteCost section end */
+
+/* teamMembers section start */
+
+.JohnDoe {
+  background-image: url(/IMAGES/member2bg.png);
+  background-repeat: no-repeat;
+}
+
+.DougNorm {
+  background-image: url(/IMAGES/member4bg.png);
+  background-repeat: no-repeat;
+}
+
+/* teamMembers section end */
+
+.hoverEffectShadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
