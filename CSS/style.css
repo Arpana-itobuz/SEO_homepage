@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 * {
   padding: 0;
   font-family: "poppins";
+}
+
+.container {
+  max-width: 19020px !important;
 }
 
 /* navBar setion start */
@@ -14,62 +20,44 @@
 
 /* topSection start */
 
-h1 {
-  font-weight: bold;
-  position: relative;
+@media screen and (min-width:650px) {
+  .expert {
+    position: absolute;
+    left: 120%;
+    color: #6f77f1;
+    border: 2px solid #6f77f1;
+    padding: 0.3rem;
+    rotate: -8.23deg;
+    font-size: 3rem;
+  }
 }
 
-.expert {
-  position: absolute;
-  right: 0;
-  color: #6f77f1;
-  border: 2px solid #6f77f1;
-  padding: 0.3rem;
-  rotate: -15deg;
-  font-size: 3rem;
-}
-
-.zig-zag {
-  top: 7rem;
-  min-width: fit-content;
-}
-
-.womandiv {
-  min-width: fit-content;
-  /* right: 7rem; */
- /* left: 5rem; */
-}
-
-
-.blue-box {
-  min-width: fit-content;
-  top:1rem;
-  left: 7rem;
-}
 
 .creativeTeamPerson1 {
-  left: 2%;
+  left: 0%;
 }
 
 .creativeTeamPerson2 {
-  left: 17%;
+  left: 8%;
 }
 
 .creativeTeamPerson3 {
-  left: 34%;
+  left: 16%;
 }
 
 .creativeTeamPerson4 {
-  left: 51%;
+  left: 24%;
 }
 
 .creativeTeamPlusIcon {
-  left: 68%;
+  left: 32%;
 }
 
-.creativeTeam {
-  height: 15vh;
-}
+/* .creativeTeam {
+  /* height: 13vh; */
+  /* max-width: 5px; */
+  /* background-color: white; */
+/* } */ 
 
 /* topSectionEnd */
 
@@ -110,27 +98,6 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.websiteOptimisationContinous {
-  background-image: url(/IMAGES/Ellipse\ 26.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.websiteOptimisationSearch {
-  background-image: url(/IMAGES/Ellipse\ 23.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.websiteOptimisationTargetAnalysis {
-  background-image: url(/IMAGES/Ellipse\ 25.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.websiteOptimisationContentOptimisation {
-  background-image: url(/IMAGES/Ellipse\ 24.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .blueBackGround {
   background-image: url(/IMAGES/Ellipse\ 28.png);
@@ -151,34 +118,20 @@ h1 {
 
 /* businessSolution section end */
 
-/* businessGrowth section start */
-
-.businessGrowthVectorIcon {
-  background-image: url(/IMAGES/Outline/Status/Rectangle\ 923.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.businessGrowthLightIcon {
-  background-image: url(/IMAGES/Iconly/Light/Outline/Status/Rectangle\ 923.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.businessGrowthTagIcon {
-  background-image: url(/IMAGES/Outline/Status/Outline/Status/Outline/Status/Rectangle\ 923.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* businessGrowth section end */
-
 /*  websiteCost section start */
 
+.cost {
+  color: #6f77f1;
+}
+
 .websiteCostPlans:hover {
-  background-color: #6f77f1 !important;
-  color: white;
-  /* scale: 1.08; */
+  background: url(/IMAGES/Mask\ group.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-position: inherit; */
+  /* color: white; */
+  /* height: auto; */
+  /* width: auto; */
 }
 
 .websiteCostPlans button:hover {
@@ -205,3 +158,65 @@ h1 {
 .hoverEffectShadow:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* .swiper {
+      width: 20%;
+      height: auto;
+    } */
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(229, 224, 224);
+      margin-bottom: 30px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      /* width: 100%; */
+      /* height: 100%; */
+      object-fit: cover;
+    }
+
+    .navbar-items {
+      display: inline-block;
+      position: relative;
+      color: #0087ca;
+    }
+    
+    .navbar-items::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #6f77f1;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .navbar-items:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
