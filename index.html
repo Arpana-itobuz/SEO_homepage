@@ -9,13 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,56 +19,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <title>Figma</title>
+    <title>SEO-Homepage</title>
   </head>
 
   <body>
-    <nav class="container navBar">
-      <div class="row">
-        <div class="col-md-2 fs-5 text-center mt-3">
-          nuvosa <img src="../IMAGES/nav_red_dot.png" alt="" />
-        </div>
-        <div
-          class="col-md-5 offset-md-1 mt-2 text-center d-flex flex-column flex-md-row"
+    <!----------------------- nav-bar starts --------------------------------->
+    <nav class="navbar max-container navbar-expand-lg navbar-light d-flex justify-content-between justify-content-md-around align-items-center p-2 position-relative">
+      <div class="fw-semi-bold fs-3 logo">
+        <a href="#" class="nav-link">
+          nuvosa <img src="./images/nav-bar/red-dot.png" alt=""
+        /></a>
+      </div>
+      <!-- mobile view starts -->
+      <div class="d-block d-sm-none" id="menu">
+        <i class="fas fa-thin fa-bars"></i>
+      </div>
+
+      <ul
+        class="hide list-unstyled position-absolute top-100 bg-white w-100 justify-content-around align-items-center d-flex d-sm-none py-5 flex-column"
+        id="nav_list"
+      >
+        <li class="mb-3"><a class="nav-link hover_effect" href="#">Home</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Projects</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Blog</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Contact</a></li>
+        <li class="mb-3">
+          <a href="#" class="btn border border-secondary px-3">Let's Talk</a>
+          <button class="btn bg-warning button_hover ms-2">
+            <img src="./images/nav-bar/search.png" alt="" />
+          </button>
+        </li>
+      </ul>
+      <!-- mobile view ends -->
+      <!-- desktop view starts -->
+      <ul
+        class="d-none list-unstyled justify-content-around align-items-center w-50 d-sm-flex mb-0"
+      >
+        <li class="nav-active"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-active"><a class="nav-link" href="#">Projects</a></li>
+        <li class="nav-active"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-active"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-active"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <div class="d-none d-sm-flex">
+        <a
+          href="#"
+          class="btn border border-secondary px-3 contact-hover nav-bar-tag"
         >
-          <span class="p-3"
-            ><a href="#" class="nav-link navbar-items">Home</a></span
-          >
-          <span class="p-3"
-            ><a href="#" class="nav-link navbar-items">Projects</a></span
-          >
-          <span class="p-3"
-            ><a href="#" class="nav-link navbar-items">Blog</a></span
-          >
-          <span class="p-3"
-            ><a href="#" class="nav-link navbar-items">Pricing</a></span
-          >
-          <span class="p-3"
-            ><a href="#" class="nav-link navbar-items">Contact</a></span
-          >
-        </div>
-        <div class="col-md-3 offset-md-1 mt-3 text-center">
-          <button class="btn border border-secondary LetsTalkButton">
-            Let's Talk
-          </button>
-          <button class="btn bg-warning">
-            <img src="../IMAGES/Search.png" alt="" />
-          </button>
-        </div>
+          Let's Talk
+        </a>
+        <button class="btn bg-warning button_hover ms-2">
+          <img src="./images/nav-bar/search.png" alt="" />
+        </button>
       </div>
     </nav>
-    <!-- navBar ends -->
+    <!----------------------- nav-bar ends ----------------------------------->
 
-    <section class="topSection container mt-5 text-center text-md-start">
+    <section class="top-section container mt-5 text-center text-md-start">
       <div class="row">
-        <div class="col-md-6 mt-5">
-          <h1 class="fw-bold mt-5 fs-1 ps-2">
+        <div class="col-md-6">
+          <p class="fw-semibold mt-5 ps-2 heading">
             Increase your web traffic with
             <span class="position-relative"
               >our
-              <span class="expert fs-2">expert</span>
+              <span class="expert">expert</span>
             </span>
-          </h1>
+          </p>
           <p class="my-4 fs-5 fw-light mt-5 ps-2">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when It is a long .It is a long
@@ -85,114 +96,130 @@
           <div
             class="d-flex flex-column flex-md-row align-items-center justify-content-md-between justify-content-center ps-2"
           >
-            <button class="btn bg-warning text-black mb-2 w-50 me-5 mt-3 py-3">
-              Get Started
+            <button
+              class="btn bg-warning yellow-button text-black mb-2 w-50 me-5 mt-3 py-3"
+            >
+              <a href="#" class="nav-link">Get Started</a>
             </button>
-            <div class="d-flex justify-content-center align-items-center mt-2">
-              <img src="images/Take a tour.png" class="" alt="" />
+            <div
+              class="d-flex justify-content-center align-items-center mt-2 me-5"
+            >
+              <img src="./images/top-section/take-a-tour.png" class="" alt="" />
             </div>
           </div>
         </div>
         <div
           class="col-md-6 d-flex flex-column flex-md-row align-items-center justify-content-center position-relative"
         >
-          <img src="../IMAGES/Group 674.png" class="w-100" alt="" />
-        </div>
-        <div
-          class="w-25 position-absolute start-50 bottom-0 z-2 d-md-block d-none"
-        >
-          <div class="creativeTeam">
-            <p>Our Creative Team</p>
-            <img
-              src="images/Ellipse 15.png"
-              class="img-fluid creativeTeamPerson1 position-absolute"
-              alt=""
-            />
-            <img
-              src="images/Ellipse 16.png"
-              class="creativeTeamPerson2 position-absolute"
-              alt=""
-            />
-            <img
-              src="images/Ellipse 17.png"
-              class="creativeTeamPerson3 position-absolute"
-              alt=""
-            />
-            <img
-              src="images/Ellipse 18.png"
-              class="creativeTeamPerson4 position-absolute"
-              alt=""
-            />
-            <img
-              src="images/+.png"
-              class="creativeTeamPlusIcon position-absolute"
-              alt=""
-            />
+          <img src="./images/top-section/girl.png" class="w-75" alt="" />
+          <div
+            class="position-absolute z-2 d-md-block d-none bg-white"
+            style="width: 220px; height: 100px; left: 10%; bottom: 0%"
+          >
+            <div class="creativeTeam">
+              <p>Our Creative Team</p>
+              <img
+                src="./images/top-section/member1.png"
+                class="img-fluid creative-team-person-1 position-absolute"
+                alt=""
+              />
+              <img
+                src="./images/top-section/member2.png"
+                class="creative-team-person-2 position-absolute"
+                alt=""
+              />
+              <img
+                src="./images/top-section/member3.png"
+                class="creative-team-person-3 position-absolute"
+                alt=""
+              />
+              <img
+                src="./images/top-section/member4.png"
+                class="creative-team-person-4 position-absolute"
+                alt=""
+              />
+              <img
+                src="./images/top-section/plus-icon.png"
+                class="creativeTeamPlusIcon position-absolute"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- topSection ends -->
+    <!-- top-section ends -->
 
-    <section class="socialMedia container mt-5 text-center text-md-start">
+    <section class="social-media container mt-5 text-center text-md-start">
       <div class="row">
-        <div class="col-md-3 ms-md-5 position-relative hoverEffectShadow p-3">
-          <div class="d-flex flex-column flex-md-row align-items-center">
-            <img src="../IMAGES/Message_perspective_matte.png" alt="" />
-            <h4 class="fw-semi-bold text-center">Social Media Management</h4>
+        <div class="col-md-3 ms-md-5 position-relative hover-effect-shadow p-3">
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <img
+              src="./images/social-media/social.png"
+              class="img-fluid"
+              alt=""
+            />
+            <p class="fs-3">Social Media Management</p>
           </div>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content .It is a long established fact that.
           </p>
-          <img
-            src="../IMAGES/Iconly/Light/Arrow - Right.png"
-            class="position-absolute bottom-0 end-0 p-2"
-            alt=""
-          />
+          <a href="#" class="nav-link">
+            <img
+              src="./images/social-media/arrow-right.png"
+              class="position-absolute bottom-0 end-0 p-2"
+              alt=""
+          /></a>
         </div>
         <div
-          class="col-md-3 offset-md-1 position-relative hoverEffectShadow p-3"
+          class="col-md-3 offset-md-1 position-relative hover-effect-shadow p-3"
         >
-          <div class="d-flex flex-column flex-md-row align-items-center">
-            <img src="../IMAGES/Browser_perspective_matte.png" alt="" />
-            <h4 class="fw-semi-bold">Email Marketing</h4>
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <img
+              src="./images/social-media/email.png"
+              class="img-fluid"
+              alt=""
+            />
+            <p class="fs-3">Email Marketing</p>
           </div>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content .It is a long established fact that.
           </p>
-          <img
-            src="../IMAGES/Iconly/Light/Arrow - Right.png"
-            class="position-absolute bottom-0 end-0 p-2"
-            alt=""
-          />
+          <a href="#" class="nav-link">
+            <img
+              src="./images/social-media/arrow-right.png"
+              class="position-absolute bottom-0 end-0 p-2"
+              alt=""
+          /></a>
         </div>
         <div
-          class="col-md-3 offset-md-1 position-relative hoverEffectShadow p-3"
+          class="col-md-3 offset-md-1 position-relative hover-effect-shadow p-3"
         >
-          <div class="d-flex flex-column flex-md-row align-items-center">
-            <img src="../IMAGES/Chart_perspective_matte.png" alt="" />
-            <h4 class="fw-semi-bold">SEO Management</h4>
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <img src="./images/social-media/seo.png" class="img-fluid" alt="" />
+            <p class="fs-3">SEO Management</p>
           </div>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content .It is a long established fact that.
           </p>
-          <img
-            src="../IMAGES/Iconly/Light/Arrow - Right.png"
-            class="position-absolute bottom-0 end-0 p-2"
-            alt=""
-          />
+          <a href="#" class="nav-link">
+            <img
+              src="./images/social-media/arrow-right.png"
+              class="position-absolute bottom-0 end-0 p-2"
+              alt=""
+          /></a>
         </div>
       </div>
     </section>
     <!-- socialMedia section ends -->
 
     <section
-      class="websiteOptimisation container mt-5 text-center text-md-start"
+      class="website-optimisation container mt-5 text-center text-md-start"
     >
-      <div class="row">
+      <div class="row px-5">
         <h2 class="pb-3">
           Optimising Your <span class="text-primary">Website</span>
         </h2>
@@ -201,48 +228,42 @@
           readable content of <br />a page when It is a long .
         </p>
       </div>
-      <div class="row blueBackGround d-flex justify-content-around bg-white">
-        <div class="col-md-2 p-3 ms-2 me-5 websiteOptimisationResearch ms-5">
-          <div class="websiteOptimisationSearch p-1 pb-3">
-            <img src="../IMAGES/Group 678.png" alt="" />
+      <div class="row blue-backGround d-flex justify-content-around bg-white">
+        <div class="col-md-2 p-3 website-optimisation-research">
+          <div class="p-1 pb-3">
+            <img src="./images/website-optimisation/research-icon.png" alt="" />
           </div>
-          <h6 class="pb-3 fw-semi-bold fs-3">Keyword Research</h6>
+          <h6 class="fs-5 pb-3">Keyword Research</h6>
           <p>
             It is a long established fact that a reader will be distracted by
             the It is a long established .
           </p>
         </div>
-        <div
-          class="col-md-2 ms-2 me-5 p-3 websiteOptimisationContent bg-white ms-5"
-        >
-          <div class="websiteOptimisationContentOptimisation p-1 pb-3">
-            <img src="../IMAGES/Group 677.png" alt="" />
+        <div class="col-md-2 p-2 website-optimisation-content bg-white">
+          <div class="p-1 pb-3">
+            <img src="./images/website-optimisation/content-icon.png" alt="" />
           </div>
-          <h6 class="pb-3 fw-semi-bold fs-3">Content Optimisation</h6>
+          <h6 class="fs-5 pb-3">Content Optimisation</h6>
           <p>
             It is a long established fact that a reader will be distracted by
             the It is a long established .
           </p>
         </div>
-        <div
-          class="col-md-2 ms-2 me-5 p-3 websiteOptimisationTarget bg-white ms-5"
-        >
-          <div class="websiteOptimisationTargetAnalysis p-1 pb-3">
-            <img src="../IMAGES/Group 676.png" alt="" />
+        <div class="col-md-2 p-3 website-optimisation-target bg-white">
+          <div class="p-1 pb-3">
+            <img src="./images/website-optimisation/target-icon.png" alt="" />
           </div>
-          <h6 class="pb-3 fw-semi-bold fs-3">Target Analysis</h6>
+          <h6 class="fs-5 pb-3">Target Analysis</h6>
           <p>
             It is a long established fact that a reader will be distracted by
             the It is a long established .
           </p>
         </div>
-        <div
-          class="col-md-2 ms-2 me-5 p-3 websiteOptimisationTesting bg-white ms-5"
-        >
-          <div class="websiteOptimisationContinous pb-3">
-            <img src="../IMAGES/Group 675.png" alt="" />
+        <div class="col-md-2 p-3 website-optimisation-testing bg-white">
+          <div class="pb-3">
+            <img src="./images/website-optimisation/like-icon.png" alt="" />
           </div>
-          <h6 class="pb-3 fw-semi-bold fs-3">Continuous Testing</h6>
+          <h6 class="fs-5 pb-3">Continuous Testing</h6>
           <p>
             It is a long established fact that a reader will be distracted by
             the It is a long established .
@@ -252,7 +273,7 @@
     </section>
     <!-- websiteOptimisation section ends -->
 
-    <section class="businessSolution text-center text-md-start">
+    <section class="business-solution text-center text-md-start">
       <div class="row me-0 mt-5">
         <div class="col-md-4 offset-md-2 mb-5">
           <h2 class="m-3">
@@ -263,11 +284,11 @@
             the It is a long established . It is a long established fact that a
             reader will be distracted by the readable content of .
           </p>
-          <button class="btn bg-warning m-3">Learn More</button>
+          <button class="btn bg-warning yellow-button m-3">Learn More</button>
         </div>
         <div class="col-md-4 offset-md-1 mt-5">
           <img
-            src="../IMAGES/New Macbook Pro Mockup Front View.png"
+            src="./images/bussiness-solution/macbook.png"
             class="w-100"
             alt=""
           />
@@ -276,115 +297,123 @@
     </section>
     <!-- businessSolution section ends -->
 
-    <section
-      class="businessGrowth container mt-5 mb-5 text-center text-md-start"
-    >
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-3 p-3 hoverEffectShadow">
+    <section class="business-growth container mt-5 mb-5 text-center text-md-start">
+      <div class="row d-flex justify-content-center gap-3">
+        <div class="col-md-3 p-3 hover-effect-shadow">
           <div class="p-3 mb-3">
-            <img src="../IMAGES/Outline/Status/Lightning-alt.png" alt="" />
+            <img src="./images/bussiness-growth/grow-business.png" alt="" />
           </div>
-          <h5 class="fw-bold pb-2 pt-2">Grow Your Bussiness</h5>
+          <h5 class="fw-semibold pb-2 pt-2">Grow Your Bussiness</h5>
           <p>
             It is a long established fact that a reader will be distracted by.
           </p>
-          <span class="text-primary">Read More...</span>
+          <a href="#" class="nav-link">Read More...</a>
         </div>
-        <div class="col-md-3 offset-md-1 p-3 hoverEffectShadow">
+        <div class="col-md-3 p-3 hover-effect-shadow">
           <div class="p-3 mb-3">
-            <img
-              src="../IMAGES/Iconly/Light/Outline/Status/Outline/Status/Lightning-alt.png"
-              alt=""
-            />
+            <img src="./images/bussiness-growth/quality-leads.png" alt="" />
           </div>
-          <h5 class="fw-bold pb-2 pt-2">Get Quality Leads</h5>
+          <h5 class="fw-semibold pb-2 pt-2">Get Quality Leads</h5>
           <p>
             It is a long established fact that a reader will be distracted by.
           </p>
-          <span class="text-primary">Read More...</span>
+          <a href="#" class="nav-link">Read More...</a>
         </div>
-        <div class="col-md-3 offset-md-1 p-3 hoverEffectShadow">
+        <div class="col-md-3 p-3 hover-effect-shadow">
           <div class="p-3 mb-3">
-            <img
-              src="../IMAGES/Iconly/Light/Outline/Status/Outline/Outline/Status/Lightning-alt.png"
-              alt=""
-            />
+            <img src="./images/bussiness-growth/sales.png" alt="" />
           </div>
-          <h5 class="fw-bold pb-2 pt-2">Drive More Sales</h5>
+          <h5 class="fw-semibold pb-2 pt-2">Drive More Sales</h5>
           <p>
             It is a long established fact that a reader will be distracted by.
           </p>
-          <span class="text-primary">Read More...</span>
+          <a href="#" class="nav-link">Read More...</a>
         </div>
       </div>
     </section>
     <!-- businessGrowth section ends  -->
 
-    <section class="websiteFeatures bg-light w-100 text-center text-md-start">
+    <section class="website-features bg-light w-100 text-center text-md-start">
       <div class="container mt-5 text-center">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
           <h3 class="text-center fw-semi-bold mt-5">
             Why you should <span class="text-primary">Choose us.</span>
           </h3>
-          <p class="text-center mb-5">
+          <p class="text-center mb-5 p-2 w-75">
             It is a long established fact that a reader will be distracted by
             the readable content .It is a long established fact that a reader
             .It is a long established fact that a reader will be .
           </p>
         </div>
-        <div class="row">
-          <div
-            class="col-md-3 offset-md-1 hoverEffectShadow mb-5 me-5 bg-white"
-          >
+        <div class="row gap-3 d-flex justify-content-center">
+          <div class="col-md-3 hover-effect-shadow mb-5 bg-white p-3">
             <div class="text-center">
-              <img src="../IMAGES/image 30.png" class="w-100" alt="" />
+              <img
+                src="./images/website-features/optimize.png"
+                class="w-100"
+                alt=""
+              />
             </div>
-            <h4>See optimazadion</h4>
+            <h4 class="fw-normal">See optimazadion</h4>
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
-            <button class="btn bg-warning mb-5"><span>Learn More</span></button>
+            <button class="btn bg-warning yellow-button mb-5">
+              <span>Learn More</span>
+            </button>
           </div>
-          <div class="col-md-3 hoverEffectShadow mb-5 me-5 bg-white">
+          <div class="col-md-3 hover-effect-shadow mb-5 bg-white p-2">
             <div class="text-center w-100">
-              <img src="../IMAGES/image 31.png" class="w-100" alt="" />
+              <img
+                src="./images/website-features/keyword.png"
+                class="w-100"
+                alt=""
+              />
             </div>
-            <h4>Keyword research</h4>
+            <h4 class="fw-normal">Keyword research</h4>
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
-            <button class="btn bg-warning mb-5"><span>Learn More</span></button>
+            <button class="btn bg-warning yellow-button mb-5">
+              <span>Learn More</span>
+            </button>
           </div>
-          <div class="col-md-3 hoverEffectShadow mb-5 me-5 bg-white">
+          <div class="col-md-3 hover-effect-shadow mb-5 bg-white p-2">
             <div class="text-center w-75 m-auto">
               <img
-                src="../IMAGES/Iconly/image 30.png"
+                src="./images/website-features/social.png"
                 class="w-100 m-auto"
                 alt=""
               />
             </div>
-            <h4>Social marketing</h4>
+            <h4 class="fw-normal">Social marketing</h4>
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
-            <button class="btn bg-warning mb-5"><span>Learn More</span></button>
+            <button class="btn bg-warning yellow-button mb-5">
+              <span>Learn More</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
     <!-- websiteFeatures section ends  -->
 
-    <section class="websiteDesigns container text-center text-md-start">
+    <section class="website-designs container text-center text-md-start">
       <div class="row">
         <div class="col-md-4 offset-md-1 d-flex align-items-center">
-          <img src="../IMAGES/WhySEO.png" class="w-100" alt="" />
+          <img
+            src="./images/website-designs/seo-image.png"
+            class="w-100"
+            alt=""
+          />
         </div>
         <div class="col-md-6 offset-md-1">
           <div>
-            <p class="fw-bold fs-1 mt-5">
+            <p class="fw-bold fs-2 mt-5">
               You Make Ask What SEO & Why Do You
               <span class="text-primary">Need It?</span>
             </p>
@@ -396,10 +425,12 @@
           </div>
           <div>
             <div
-              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hoverEffectShadow"
+              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hover-effect-shadow w-75"
             >
-              <div><img src="../IMAGES/email.png" alt="" /></div>
               <div>
+                <img src="./images/website-designs/social.png" alt="" />
+              </div>
+              <div class="p-3">
                 <h5 class="text-center text-md-start mt-2">
                   Social media marketing
                 </h5>
@@ -410,10 +441,12 @@
               </div>
             </div>
             <div
-              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hoverEffectShadow"
+              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hover-effect-shadow w-75"
             >
-              <div><img src="../IMAGES/email1.png" alt="" /></div>
               <div>
+                <img src="./images/website-designs/email1.png" alt="" />
+              </div>
+              <div class="p-3">
                 <h5 class="text-center text-md-start mt-2">Email marketing</h5>
                 <p>
                   It is a long established fact that a reader will be distracted
@@ -422,10 +455,10 @@
               </div>
             </div>
             <div
-              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hoverEffectShadow"
+              class="d-flex justify-content-around align-items-center flex-column flex-md-row p-2 hover-effect-shadow w-75"
             >
-              <div><img src="../IMAGES/email2.png" alt="" /></div>
-              <div>
+              <div><img src="./images/website-designs/seo.png" alt="" /></div>
+              <div class="p-3">
                 <h5 class="text-center text-md-start mt-2">SEO optimization</h5>
                 <p>
                   It is a long established fact that a reader will be distracted
@@ -440,41 +473,49 @@
     <!-- websiteDesigns section ends -->
 
     <section
-      class="clientsCount container d-flex align-items-center justify-content-center mt-5"
+      class="clients-count container d-flex align-items-center justify-content-center mt-5"
     >
       <div
-        class="row border border-secondary p-2 d-flex align-items-center justify-content-around"
+        class="w-50 card p-2 d-flex align-items-center justify-content-around mt-5 flex-column flex-lg-row"
       >
-        <div class="col-md-1">
-          <h2 class="text-center">86</h2>
-          <p class="text-center">Happy Clients</p>
+        <div
+          class="d-flex align-items-center flex-column justify-content-center p-2"
+        >
+          <h2>86</h2>
+          <span class="text-center">Happy Clients</span>
         </div>
-        <div class="col-md-1 text-center">
-          <img src="../IMAGES/red.png" class="" />
+
+        <img src="./images/clients-count/red.png" />
+
+        <div
+          class="d-flex align-items-center flex-column justify-content-center p-2"
+        >
+          <h2>118</h2>
+          <span class="text-center">Project Done</span>
         </div>
-        <div class="col-md-1">
-          <h2 class="text-center">118</h2>
-          <p class="text-center">Project Done</p>
+
+        <img src="./images/clients-count/green.png" alt="" />
+
+        <div
+          class="d-flex align-items-center flex-column justify-content-center py-2"
+        >
+          <h2>6+</h2>
+          <span class="text-center">Years of Experience</span>
         </div>
-        <div class="col-md-1 text-center">
-          <img src="../IMAGES/green.png" class="" alt="" />
-        </div>
-        <div class="col-md-1">
-          <h2 class="text-center">6+</h2>
-          <p class="text-center">Years of Experience</p>
-        </div>
-        <div class="col-md-1 text-center">
-          <img src="../IMAGES/yellow.png" class="" alt="" />
-        </div>
-        <div class="col-md-1">
-          <h2 class="text-center">14</h2>
-          <p class="text-center">National Awards</p>
+
+        <img src="./images/clients-count/yellow.png" alt="" />
+
+        <div
+          class="d-flex align-items-center flex-column justify-content-center p-2"
+        >
+          <h2>14</h2>
+          <span class="text-center">National Awards</span>
         </div>
       </div>
     </section>
     <!-- clientsCount section ends -->
 
-    <section class="websiteSpeed container mt-5 text-center text-md-start">
+    <section class="website-speed container mt-5 text-center text-md-start">
       <div
         class="row d-flex align-items-center justify-content-center text-start"
       >
@@ -502,32 +543,40 @@
                 required
               />
             </div>
-            <div class="mb-5 mb-md-0">
-              <button class="btn bg-warning text-black mt-1 ms-2 mt-md-3">
+            <div class="mb-2 mb-md-0">
+              <button
+                class="btn bg-warning yellow-button text-black mt-1 ms-2 mt-md-3"
+              >
                 <span>Submit</span>
               </button>
             </div>
           </form>
         </div>
-        <div class="col-md-5 offset-md-1">
-          <img src="../IMAGES/image 33.png" class="w-100" alt="" />
+        <div class="col-md-4">
+          <img
+            src="./images/website-speed/website-speed.png"
+            class="w-100"
+            alt=""
+          />
         </div>
       </div>
     </section>
     <!-- websiteSpeed section ends -->
 
     <section
-      class="websiteCost bg-body-tertiary w-100 text-center text-md-start"
+      class="website-cost bg-body-tertiary w-100 text-center text-md-start"
     >
       <div class="container p-5">
         <div class="row text-center">
           <h3 class="fw-bold m-auto">Our Plans</h3>
           <p class="mb-5">Choose the right SEO for you</p>
         </div>
-        <div class="row text-center d-flex justify-content-center gap-5">
-          <div class="col-md-3 p-md-5 p-5 mb-5 mb-md-0 websiteCostPlans">
-            <h5 class="fw-bold cost">Plus</h5>
-            <p>$<span class="fs-1">46</span>/month</p>
+        <div
+          class="text-center d-flex justify-content-center gap-5 flex-column flex-md-row"
+        >
+          <div class="p-3 mb-5 mb-md-0 website-cost-plans bg-white">
+            <h4 class="cost">Plus</h4>
+            <p><sup>$</sup><span class="fs-1">46</span><sub>/month</sub></p>
             <p>408GB Bandwidth</p>
             <p>Business & Finance Analysing</p>
             <p>24 Hour Support</p>
@@ -536,9 +585,9 @@
               <span>Get Started</span>
             </button>
           </div>
-          <div class="col-md-3 p-md-5 p-5 mb-5 mb-md-0 websiteCostPlans">
-            <h5 class="fw-bold cost">Beginner</h5>
-            <p>$<span class="fs-1">66</span>/month</p>
+          <div class="p-3 mb-5 mb-md-0 website-cost-plans bg-white">
+            <h4 class="cost">Beginner</h4>
+            <p><sup>$</sup><span class="fs-1">66</span><sub>/month</sub></p>
             <p>408GB Bandwidth</p>
             <p>Business & Finance Analysing</p>
             <p>24 Hour Support</p>
@@ -547,9 +596,9 @@
               <span>Get Started</span>
             </button>
           </div>
-          <div class="col-md-3 p-md-5 p-5 mb-5 mb-md-0 websiteCostPlans">
-            <h5 class="fw-bold cost">Advanced</h5>
-            <p>$<span class="fs-1">86</span>/month</p>
+          <div class="p-3 mb-5 mb-md-0 website-cost-plans bg-white">
+            <h4 class="cost">Advanced</h4>
+            <p><sup>$</sup><span class="fs-1">86</span><sub>/month</sub></p>
             <p>408GB Bandwidth</p>
             <p>Business & Finance Analysing</p>
             <p>24 Hour Support</p>
@@ -563,7 +612,7 @@
     </section>
     <!-- websiteCost section ends -->
 
-    <section class="teamMembers container mt-5 text-center text-md-start">
+    <section class="team-members container mt-5 text-center text-md-start">
       <div class="row text-center">
         <h2 class="mb-2 fw-bold">
           Our Expert Team <span class="text-primary">Members</span>
@@ -573,128 +622,162 @@
           readable content .It is a long established fact that a reader
         </p>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-center gap-5">
         <div
-          class="col-md-2 offset-md-1 p-3 hoverEffectShadow me-5 text-center border border-light-subtle mt-5"
+          class="col-md-2 p-3 hover-effect-shadow text-center border border-light-subtle mt-3"
         >
-          <img src="../IMAGES/member1.png" alt="" />
+          <img
+            src="./images/team-members/member1.png"
+            class="img-fluid"
+            alt=""
+          />
           <h3>Muriel Whee</h3>
           <p>Marketing Manager</p>
-          <div>
-            <img
-              src="../IMAGES/Outline/Brands/Google-alt.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Instagram.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Twitter.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Facebook.png"
-              class="ms-2"
-              alt=""
-            />
+          <div class="d-flex justify-content-around">
+            <a href="https://www.google.com" class="nav-link"
+              ><img
+                src="./images/team-members/google-alt.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.instagram.com" class="nav-link">
+              <img
+                src="./images/team-members/instagram.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://twitter.com" class="nav-link">
+              <img
+                src="./images/team-members/twitter.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.facebook.com" class="nav-link">
+              <img
+                src="./images/team-members/facebook.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
           </div>
         </div>
         <div
-          class="col-md-2 p-3 hoverEffectShadow me-5 text-center border border-light-subtle mt-5"
+          class="col-md-2 p-3 hover-effect-shadow text-center border border-light-subtle mt-3"
         >
-          <img src="../IMAGES/member2.png" class="JohnDoe" alt="" />
+          <img
+            src="./images/team-members/member2.png"
+            class="img-fluid"
+            alt=""
+          />
           <h3>John Doe</h3>
           <p>Marketing Manager</p>
-          <div>
-            <img
-              src="../IMAGES/Outline/Brands/Google-alt.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Instagram.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Twitter.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Facebook.png"
-              class="ms-2"
-              alt=""
-            />
+          <div class="d-flex justify-content-around">
+            <a href="https://www.google.com" class="nav-link"
+              ><img
+                src="./images/team-members/google-alt.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.instagram.com" class="nav-link">
+              <img
+                src="./images/team-members/instagram.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://twitter.com" class="nav-link">
+              <img
+                src="./images/team-members/twitter.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.facebook.com" class="nav-link">
+              <img
+                src="./images/team-members/facebook.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
           </div>
         </div>
         <div
-          class="col-md-2 p-3 hoverEffectShadow me-5 text-center border border-light-subtle mt-5"
+          class="col-md-2 p-3 hover-effect-shadow text-center border border-light-subtle mt-3"
         >
-          <img src="../IMAGES/member3.png" alt="" />
+          <img
+            src="./images/team-members/member3.png"
+            class="img-fluid"
+            alt=""
+          />
           <h3>Clay Porter</h3>
           <p>Marketing Manager</p>
-          <div>
-            <img
-              src="../IMAGES/Outline/Brands/Google-alt.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Instagram.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Twitter.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Facebook.png"
-              class="ms-2"
-              alt=""
-            />
+          <div class="d-flex justify-content-around">
+            <a href="https://www.google.com" class="nav-link"
+              ><img
+                src="./images/team-members/google-alt.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.instagram.com" class="nav-link">
+              <img
+                src="./images/team-members/instagram.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://twitter.com" class="nav-link">
+              <img
+                src="./images/team-members/twitter.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.facebook.com" class="nav-link">
+              <img
+                src="./images/team-members/facebook.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
           </div>
         </div>
         <div
-          class="col-md-2 p-3 hoverEffectShadow me-5 text-center border border-light-subtle mt-5"
+          class="col-md-2 p-3 hover-effect-shadow text-center border border-light-subtle mt-3"
         >
-          <img src="../IMAGES/member4.png" class="DougNorm" alt="" />
-          <h3>Doug Norm</h3>
-          <p>Marketing Manager</p>
           <div>
             <img
-              src="../IMAGES/Outline/Brands/Google-alt.png"
-              class="ms-2"
+              src="./images/team-members/image.png"
+              class="img-fluid"
               alt=""
             />
-            <img
-              src="../IMAGES/Outline/Brands/Instagram.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Twitter.png"
-              class="ms-2"
-              alt=""
-            />
-            <img
-              src="../IMAGES/Outline/Brands/Facebook.png"
-              class="ms-2"
-              alt=""
-            />
+          </div>
+          <h3>Doug Norm</h3>
+          <p>Marketing Manager</p>
+          <div class="d-flex justify-content-around">
+            <a href="https://www.google.com" class="nav-link"
+              ><img
+                src="./images/team-members/google-alt.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.instagram.com" class="nav-link">
+              <img
+                src="./images/team-members/instagram.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://twitter.com" class="nav-link">
+              <img
+                src="./images/team-members/twitter.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
+            <a href="https://www.facebook.com" class="nav-link">
+              <img
+                src="./images/team-members/facebook.svg"
+                alt=""
+                class="hover-icon"
+            /></a>
           </div>
         </div>
       </div>
     </section>
     <!-- /* teamMembers section ends -->
 
-    <section class="clientsReview container mt-5 text-center text-md-start">
+    <section class="clients-review container mt-5 text-center text-md-start">
       <div class="row">
         <h3 class="text-center fw-bold fs-2">Our clients say</h3>
         <p class="text-center mb-5">
@@ -706,53 +789,69 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div
-            class="swiper-slide d-flex flex-column w-md-25 w-100 p-2 flex-md-shrink-1"
+            class="swiper-slide d-flex flex-column w-md-25 w-100 p-3 flex-md-shrink-1 mb-5"
+            style="
+              background: url(./images/clients-review/clients-review-bg.png)
+                no-repeat;
+            "
           >
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
             <div class="text-center">
-              <img src="../IMAGES/first.png" alt="" />
+              <img src="./images/clients-review/first.png" alt="" />
             </div>
             <p class="fw-bold text-center">Clay Porter</p>
             <p class="text-center">Ship builder</p>
           </div>
           <div
-            class="swiper-slide d-flex flex-column w-md-25 w-100 p-2 flex-md-shrink-1"
+            class="swiper-slide d-flex flex-column w-md-25 w-100 p-3 flex-md-shrink-1"
+            style="
+              background: url(./images/clients-review/clients-review-bg.png)
+                no-repeat;
+            "
           >
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
             <div class="text-center">
-              <img src="../IMAGES/second.png" alt="" />
+              <img src="./images/clients-review/second.png" alt="" />
             </div>
             <p class="fw-bold text-center">Clay Porter</p>
             <p class="text-center">Ship builder</p>
           </div>
           <div
-            class="swiper-slide d-flex flex-column w-md-25 p-2 w-100 flex-md-shrink-1"
+            class="swiper-slide d-flex flex-column w-md-25 p-3 w-100 flex-md-shrink-1"
+            style="
+              background: url(./images/clients-review/clients-review-bg.png)
+                no-repeat;
+            "
           >
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
             <div class="text-center">
-              <img src="../IMAGES/third.png" alt="" />
+              <img src="./images/clients-review/third.png" alt="" />
             </div>
             <p class="fw-bold text-center">Clay Porter</p>
             <p class="text-center">Ship builder</p>
           </div>
           <div
-            class="swiper-slide d-flex flex-column w-md-25 p-2 w-100 flex-md-shrink-1"
+            class="swiper-slide d-flex flex-column w-md-25 p-3 w-100 flex-md-shrink-1"
+            style="
+              background: url(./images/clients-review/clients-review-bg.png)
+                no-repeat;
+            "
           >
             <p class="mt-2">
               It is a long established fact that a reader will be distracted by
               the readable content .It is a
             </p>
             <div class="text-center">
-              <img src="../IMAGES/fourth.png" alt="" />
+              <img src="./images/clients-review/fourth.png" alt="" />
             </div>
             <p class="fw-bold text-center">Clay Porter</p>
             <p class="text-center">Ship builder</p>
@@ -764,36 +863,35 @@
 
     <!-- Swiper JS -->
 
-    <section class="subscribtionSection text-center text-center text-md-start">
+    <section class="subscribtion-section text-center text-center text-md-start">
       <div class="offset-md-1 col-md-10 offset-md-1 bg-light py-5">
         <div class="text-center">
           <h2 class="mb-3 fw-semi-bold fs-1">
-            Subscribe & find the perfect Comdetics
+            Subscribe & find the perfect Cosmetics
           </h2>
           <p class="mb-3">
             Enter your email and get updated new products & news
           </p>
         </div>
-        <!-- <div class="d-flex flex-column flex-md-row align-items-center justify-content-center"> -->
         <form
-          class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5"
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center"
         >
-          <div class="d-flex flex-column flex-md-row w-50 ms-5">
+          <div class="d-flex flex-column flex-md-row">
             <input
               type="text"
               placeholder="Name"
-              class="p-2 mb-2 mt-3 w-50 ms-5"
+              class="p-2 mb-2 mt-3"
               required
             />
             <input
               type="email"
               placeholder="Email Address"
-              class="p-2 mb-2 mt-3 ms-1 w-50"
+              class="p-2 mb-2 mt-3 ms-1"
               required
             />
           </div>
-          <div class="mb-md-2 mb-5 w-25">
-            <button class="btn bg-primary text-white mt-3 ms-2 w-50">
+          <div class="mb-md-2 mb-3 w-25 me-5 me-md-0">
+            <button class="btn bg-primary text-white mt-3 ms-2">
               <span>Subscribe</span>
             </button>
           </div>
@@ -805,15 +903,25 @@
 
     <section class="footer container text-center text-md-start">
       <div class="fw-semi-bold fs-3 text-center mt-3">
-        nuvosa <img src="../IMAGES/nav_red_dot.png" alt="" />
+        nuvosa <img src="./images/footer/red-dot.png" alt="" />
       </div>
-      <div class="row mt-3 mb-2 text-center">
-        <div class="col-md-1 offset-md-4">Overview</div>
-        <div class="col-md-1">Pricing</div>
-        <div class="col-md-1">Careers</div>
-        <div class="col-md-1">Help</div>
-        <div class="col-md-1">Privacy</div>
-      </div>
+      <ul class="row mt-3 mb-2 text-center list-unstyled">
+        <li class="col-md-1 offset-md-4 navbar-items">
+          <a href="#" class="nav-link">Overview</a>
+        </li>
+        <li class="col-md-1 navbar-items">
+          <a href="#" class="nav-link">Pricing</a>
+        </li>
+        <li class="col-md-1 navbar-items">
+          <a href="#" class="nav-link">Careers</a>
+        </li>
+        <li class="col-md-1 navbar-items">
+          <a href="#" class="nav-link">Help</a>
+        </li>
+        <li class="col-md-1 navbar-items">
+          <a href="#" class="nav-link">Privacy</a>
+        </li>
+      </ul>
       <hr />
       <div
         class="row pb-3 d-flex flex-column-reverse flex-md-row justify-content-around"
