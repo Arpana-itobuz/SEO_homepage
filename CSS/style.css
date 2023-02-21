@@ -54,6 +54,14 @@ body {
 .show {
   opacity: 0.96 !important;
 }
+
+.search-bar.show {
+  display: block;
+}
+
+.search-bar.hide {
+  display: none;
+}
 /* nav-bar section end */
 
 
@@ -243,6 +251,13 @@ h1 span {
 
 
 /* team-members section start */
+.hover-shadow-team:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.hover-shadow-team:hover h3{
+  color: #6f77f1;
+}
+
 .hover-icon:hover {
   filter: invert(47%) sepia(13%) saturate(4364%) hue-rotate(208deg)
     brightness(99%) contrast(90%);
