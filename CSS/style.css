@@ -192,7 +192,7 @@ h1 span {
 }
 
 .website-optimisation-content {
-  background: url(../images/website-optimisation/two.png) no-repeat;
+  background-image: url(../images/website-optimisation/two.png);
 }
 
 .blue-backGround {
